@@ -1,13 +1,13 @@
 const tipos = {
 	primary: 'text-white bg-primary font-bold',
-	secondary: 'text-white bg-blue-400',
+	secondary: 'text-white bg-secondary',
 	terceary: 'bg-gray-300',
 };
 
 export function PrimaryButton(props) {
 	return (
 		<button
-			className={`text-center text-sm px-5 py-2 rounded-custom ${tipos.primary}`}
+			className={`text-center text-sm px-5 py-2 rounded-custom ${tipos.primary} ${props.customStyle}`}
 		>
 			{props.text}
 		</button>
@@ -17,9 +17,9 @@ export function PrimaryButton(props) {
 export function SecondaryButton(props) {
 	return (
 		<button
-			className={`text-center text-sm px-5 py-2 rounded-custom ${tipos.secondary}`}
+			className={`text-center text-sm px-5 py-2 rounded-custom ${tipos.secondary} ${props.customStyle}`}
 		>
-			{props.texto}
+			{props.text}
 		</button>
 	);
 }
@@ -27,9 +27,9 @@ export function SecondaryButton(props) {
 export function TercearyButton(props) {
 	return (
 		<button
-			className={`text-center text-sm px-5 py-2 rounded-custom ${tipos.terceary}`}
+			className={`text-center text-sm px-5 py-2 rounded-custom ${tipos.terceary} ${props.customStyle}`}
 		>
-			{props.texto}
+			{props.text}
 		</button>
 	);
 }

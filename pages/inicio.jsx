@@ -4,6 +4,18 @@ import {
 	SecondaryButton,
 	TercearyButton,
 } from '../components/button.jsx';
+import AdvertisingInicio from '../components/advertisingInicio.jsx';
+
+const infoInicio = [
+	{
+		imagen: {
+			src: 'https://distribuida.s3.us-east-2.amazonaws.com/img/ciudad.jpeg',
+			alt: 'Miami City',
+		},
+		content: 'Ponle a tus dias una dosis de diversion en las calles de Miami',
+		price: '152 USD',
+	},
+];
 
 export default function Inicio() {
 	return (
@@ -25,6 +37,11 @@ export default function Inicio() {
 					<PrimaryButton text="Ver Destinos" />
 				</div>
 			</header>
+			<main className="flex flex-col w-full h-full mt-5">
+				{infoInicio.map((content, i) => {
+					return <AdvertisingInicio {...content} key={i} />;
+				})}
+			</main>
 		</div>
 	);
 }

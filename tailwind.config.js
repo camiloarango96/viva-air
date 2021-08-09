@@ -5,6 +5,9 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: '#EF3054',
+				secondary: '#2F3061',
+				terceary: '#E5E5E5',
+				myYellow: '#FFE047',
 			},
 
 			borderRadius: {
