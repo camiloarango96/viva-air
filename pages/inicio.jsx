@@ -1,4 +1,9 @@
 import NavBar from '../components/navBar.jsx';
+import {
+	PrimaryButton,
+	SecondaryButton,
+	TercearyButton,
+} from '../components/button.jsx';
 
 export default function Inicio() {
 	return (
@@ -10,11 +15,14 @@ export default function Inicio() {
 						Vivir viajando nunca fue tan facil.
 					</h1>
 				</div>
-				<div className="mt-6">
+				<div className="mt-4 px-6">
 					<h6 className="text-center text-sm text-gray-500">
 						Programa tus proximas vacaciones con nosotros. Con destinos desde
 						99.900.
 					</h6>
+				</div>
+				<div className="flex flex-row justify-center w-full mt-8">
+					<PrimaryButton text="Ver Destinos" />
 				</div>
 			</header>
 		</div>
